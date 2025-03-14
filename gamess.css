@@ -1,0 +1,155 @@
+/* Choice Container Styles */
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(86, 165, 235, 0.25);
+    background-color: white;
+    transition: transform 150ms, box-shadow 150ms;
+  }
+  
+  .choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+  }
+  
+  .choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #56a5eb;
+    color: white;
+  }
+  
+  .choice-text {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  .correct {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .incorrect {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* HUD (Heads-Up Display) */
+  #hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+    color: #56a5eb;
+  }
+  
+  .hud-main-text {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  #progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+  }
+  
+  #progressBarFull {
+    height: 3.6rem;
+    background-color: #56a5eb;
+    width: 0%;
+  }
+  
+  /* Loader */
+  #loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Start Game Section */
+  .start-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 1rem;
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .start-container h1 {
+    font-size: 2.5rem;
+    color: #56a5eb;
+    margin-bottom: 1.5rem;
+  }
+  
+  #difficulty {
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 0.2rem solid #56a5eb;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+  
+  #difficulty:focus {
+    outline: none;
+    border-color: #28a745;
+  }
+  
+  #startButton {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    background-color: #56a5eb;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 150ms, transform 150ms;
+  }
+  
+  #startButton:hover {
+    background-color: #4695d6;
+    transform: translateY(-0.1rem);
+  }
+  
+  #startButton:active {
+    transform: translateY(0.1rem);
+  }
+  
+  /* Game Container */
+  #game {
+    max-width: 50rem;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,48 @@
+/* Container Styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  /* High Scores List Styling */
+  .high-scores-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .high-score {
+    background-color: #56a5eb;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quizzify</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="icon" type="image/jpg" href="./assets/logo.jpg" />
+    <meta name="google-site-verification" content="iNzSj2wvdEOVu1PtrK5FfEiu_teOG2LQn5i3kg-xozQ" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3775445581945009" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Loader Section -->
+    <div id="loader" class="loader hidden"></div>
+
+    <!-- Game Container -->
+    <div id="game" class="game-container hidden">
+      <!-- Difficulty Selection -->
+      <div class="start-container">
+        <h2>Choose Difficulty:</h2>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <button id="startButton">Start Game</button>
+      </div>
+
+      <!-- Quiz Section -->
+      <div id="quiz" class="hidden">
+        <!-- Question Display -->
+        <h2 id="question"></h2>
+        
+        <!-- Answer Choices -->
+        <div class="choice-container">
+          <p class="choice-text" data-number="1"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-text" data-number="2"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-text" data-number="3"></p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-text" data-number="4"></p>
+        </div>
+
+        <!-- Progress & Score -->
+        <div id="hud">
+          <h3 id="progressText"></h3>
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+          <h3>Score: <span id="score">0</span></h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home Page Links -->
+    <div class="home-container">
+      <h1>The Quizzify Game</h1>
+      <a class="btn" href="./game.html">Play</a>
+      <a class="btn" href="./highscores.html">High Scores</a>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./game.js"></script>
+  </body>
+</html>
